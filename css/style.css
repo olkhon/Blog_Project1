@@ -315,7 +315,7 @@
 .indexBlogEntriesMain {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 15px;
     justify-content: center;
     justify-items: center;
+    text-align: center;
 }
