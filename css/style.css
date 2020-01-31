@@ -66,7 +66,7 @@
 
 /* breaking point for big devices */
 
-@media (min-device-width: 1024px) {
+@media (min-device-width: 1701px) {
     .containerIndex {
         display: grid;
         grid-template-columns: 20vw 60vw;
@@ -106,11 +106,50 @@
 
 /* breaking point for medium devices */
 
-@media (min-device-width: 814px) and (max-device-width: 1024px) {
+@media (min-device-width: 1024px) and (max-device-width: 1700px) {
     .containerIndex {
         display: grid;
         grid-template-columns: 20vw 60vw;
         grid-template-rows: 10vw 60vw 10vw;
+        grid-template-areas: "hd hd hd hd" "sd ct ct ct" "ft ft ft ft";
+        justify-content: center;
+        gap: 15px;
+    }
+    .boxIndex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    }
+    #headerSectionIndex {
+        grid-area: hd;
+        color: #51C8D3;
+        padding: 5px;
+    }
+    #ContentSectionIndex {
+        grid-area: ct;
+    }
+    #footerSectionIndex {
+        grid-area: ft;
+        background: gainsboro;
+        padding: 50px;
+    }
+    #ContentSectionSidebar {
+        grid-area: sd;
+    }
+}
+
+
+/* breaking point for medium devices */
+
+@media (min-device-width: 814px) and (max-device-width: 1024px) {
+    .containerIndex {
+        display: grid;
+        grid-template-columns: 20vw 60vw;
+        grid-template-rows: 10vw 80vw 10vw;
         grid-template-areas: "hd hd hd hd" "sd ct ct ct" "ft ft ft ft";
         justify-content: center;
         gap: 15px;
@@ -150,7 +189,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 80vw;
-        grid-template-rows: 20vw 55vw 310vw 20vw;
+        grid-template-rows: 20vw 55vw 250vw 20vw;
         justify-content: center;
         grid-template-areas: "hd" "sd" "ct" "ft";
         gap: 10px;
@@ -191,7 +230,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 80vw;
-        grid-template-rows: 20vw 65vw 310vw 20vw;
+        grid-template-rows: 20vw 85vw 310vw 20vw;
         justify-content: center;
         grid-template-areas: "hd" "sd" "ct" "ft";
         gap: 10px;
@@ -232,7 +271,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 80vw;
-        grid-template-rows: 20vw 80vw 310vw 20vw;
+        grid-template-rows: 20vw 105vw 310vw 20vw;
         justify-content: center;
         grid-template-areas: "hd" "sd" "ct" "ft";
         gap: 10px;
@@ -273,7 +312,7 @@
         width: 100%;
         display: grid;
         grid-template-columns: 80vw;
-        grid-template-rows: 20vw 115vw 550vw 15vw;
+        grid-template-rows: 20vw 135vw 300vw 15vw;
         justify-content: center;
         grid-template-areas: "hd" "sd" "ct" "ft";
         gap: 10px;
@@ -306,10 +345,20 @@
     }
 }
 
-.containerFooter {
-    display: grid;
-    grid-template-columns: 80vw;
-    text-align: right;
+@media (max-device-width: 767px) {
+    .containerFooter {
+        display: grid;
+        grid-template-columns: 80vw;
+        text-align: center;
+    }
+}
+
+@media (min-device-width: 768 px) {
+    .containerFooter {
+        display: grid;
+        grid-template-columns: 80vw;
+        text-align: right;
+    }
 }
 
 .indexBlogEntriesMain {
@@ -318,4 +367,12 @@
     justify-content: center;
     justify-items: center;
     text-align: center;
+}
+
+.link-as-button {
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 3px solid #FF6860;
+    text-decoration: none;
+    background: green;
 }

@@ -38,7 +38,7 @@
     .contentBlogHomePage {
         display: grid;
         width: 100%;
-        height: 100%;
+        height: 50%;
         grid-template-columns: auto;
         grid-gap: 3px;
         background: gainsboro;
@@ -52,12 +52,78 @@
     }
 }
 
-.card {
-    background-color: grey;
-    border-radius: 5px;
+@media (min-device-width: 1701px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 10vw;
+    }
+}
+
+
+/* breaking point for medium devices */
+
+@media (min-device-width: 1024px) and (max-device-width: 1700px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 15vw;
+    }
+}
+
+
+/* breaking point for medium devices */
+
+@media (min-device-width: 814px) and (max-device-width: 1024px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 15vw;
+    }
+}
+
+
+/*breaking point for big smart phone devices */
+
+@media (min-device-width: 601px) and (max-device-width: 813px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 35vw;
+    }
+}
+
+
+/* breaking point for medium smartphone devices */
+
+@media (min-device-width: 401px) and (max-device-width: 600px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 40vw;
+    }
+}
+
+
+/* breaking point for small smartphone devices */
+
+@media (min-device-width: 300px) and (max-device-width: 400px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 40vw;
+    }
+}
+
+@media (max-device-width: 299px) {
+    .card {
+        background-color: grey;
+        border-radius: 5px;
+        height: 40vw;
+    }
 }
 
 .imgCardBlog {
-    width: 25%;
-    height: 25%;
+    width: 50%;
+    height: 50%;
 }
