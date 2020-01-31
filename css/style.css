@@ -30,7 +30,7 @@
 /* breaking point submit link sm to lg devices */
 
 @media(min-device-width: 300px) {
-    .home-link,
+    .homeLink,
     .linkSubscribeIndex {
         color: whitesmoke;
         border-radius: 5px;
@@ -45,7 +45,7 @@
 /* breaking point submit link xs devices */
 
 @media (max-device-width: 299px) {
-    .home-link,
+    .homeLink,
     .linkSubscribeIndex {
         color: whitesmoke;
         border-radius: 5px;
@@ -58,7 +58,7 @@
 }
 
 .linkSubscribeIndex :hover,
-.home-link:hover {
+.homeLink:hover {
     background-color: #FF6860;
     color: white;
 }
@@ -375,4 +375,9 @@
     border: 3px solid #FF6860;
     text-decoration: none;
     background: green;
+}
+
+figcaption {
+    font-size: 10px;
+    margin-bottom: 2%;
 }
