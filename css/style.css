@@ -1,7 +1,7 @@
-@import url("blogEntry1.css");
-@import url("contentBlogHomepage.css");
-@import url("sidebar.css");
-@import url("subscribe.css");
+@import url("../css/blogEntry1.css");
+@import url("../css/contentBlogHomepage.css");
+@import url("../css/sidebar.css");
+@import url("../css/subscribe.css");
 
 /* Linked-in */
 
